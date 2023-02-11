@@ -11,7 +11,7 @@ const Footer = () => {
           <p>&copy; 2023. Todos los derechos reservados.</p>
         </div>
         <div className="footer-center" style={{ display: 'flex' }}>
-          <Link to="/acerca-de" className="footer-link" style={{ marginRight: '20px' }}>Acerca de</Link>
+          <Link to="/nosotros" className="footer-link" style={{ marginRight: '20px' }}>Acerca de</Link>
           <Link to="/contacto" className="footer-link" style={{ marginRight: '20px' }}>Contacto</Link>
           <Link to="/politica-privacidad" className="footer-link">Política de privacidad</Link>
         </div>

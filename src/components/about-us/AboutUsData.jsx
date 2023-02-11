@@ -5,8 +5,8 @@ const AboutUsData = ({ aboutUsData }) => {
   return (
     <section className="section">
       <div className="container d-flex f-direction-column gap-sm">
-        <h3 className="section__title section__title--xs">{attributes?.slogan}</h3>
-        <p className="section__text">{attributes?.que}</p>
+        <h3 className="section__title section__title--xs">{attributes?.titulo}</h3>
+        {/* <p className="section__text">{attributes?.que}</p>
         <div className="g-elements g-elements--responsive-2 gap-md">
           <div className="card card--informative">
             <div className="card__body">
@@ -20,7 +20,7 @@ const AboutUsData = ({ aboutUsData }) => {
               <p className="section__text">{attributes?.vision}</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

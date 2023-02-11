@@ -98,9 +98,9 @@ const Header = () => {
               onChange={handleChangeSelectTheme}
               value={theme}
             >
-              <option value="system">💻</option>
-              <option value="dark">🌚</option>
-              <option value="light">🌞</option>
+              <option value="system">☯</option>
+              <option value="dark">⬛</option>
+              <option value="light">⬜</option>
             </select>
             {/* <button
               className="icon icon--sm"

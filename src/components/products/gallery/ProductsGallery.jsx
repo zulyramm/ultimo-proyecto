@@ -17,7 +17,7 @@ const ProductsGallery = ({ products }) => {
         <ul className="list g-elements g-elements--products-gallery gap-md">
           {products.map(element => {
             // const { nombre, precio, slug, marca, imagen } = element.attributes;
-            const { nombre, precio, imagen,slug } = element.attributes;
+            const { nombre, precio, imagen,slug, } = element.attributes;
             return (
               <li key={element.id} className="card card--products">
                 {/* <button
@@ -25,16 +25,16 @@ const ProductsGallery = ({ products }) => {
                 >
                   <BsCartPlus />
                 </button> */}
-                <Link to={`/productos/${slug}`}>
+                <Link to={`/productos/${nombre}`}>
                   <ContainersImage
-                    src={imagen.data[0].attributes.formats.thumbnail.url}
+                    src={imagen.data[0].attributes.url}
                     alt={nombre}
                     className="card__header-img card__header-img--products"
                   />
                 </Link>
                 <div className="card__body card__body--products">
                   {/* <h3 className="card__subtitle card__subtitle--sm">{marca.data[0]?.attributes.nombre ?? 'EAKON'}</h3> */}
-                  <Link to={`/productos/${slug}`} className="card__title card__title--sm">{nombre}</Link>
+                  <Link to={`/productos/${nombre}`} className="card__title card__title--sm">{nombre}</Link>
                   <h4 className="card__highlighted mt-auto">{peruvianCurrencyFormat(precio)}</h4>
                   <a
                     href={`https://api.whatsapp.com/send?phone=51${contactData.attributes?.componentes[3].numero}&text=Pedido ${nombre}`}

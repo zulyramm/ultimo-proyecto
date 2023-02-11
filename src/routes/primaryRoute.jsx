@@ -31,10 +31,10 @@ export const primaryRoute = createBrowserRouter([
         path: 'nosotros',
         element: <AboutUsPage />
       },
-      {
-        path: 'contacto',
-        element: <ContactPage />
-      }
+      // {
+      //   path: 'contacto',
+      //   element: <ContactPage />
+      // }
     ]
   }
 ]);

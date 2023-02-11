@@ -20,12 +20,12 @@ export const fetchReadProducts = createAsyncThunk(
 
 export const fetchReadProduct = createAsyncThunk(
   'products/fetchReadProduct',
-  async (slug, { rejectWithValue }) => {
+  async ( nombre, { rejectWithValue }) => {
     try {
       const options = {
         method: 'GET',
         // url: `/productos?filters[slug][$eq]=${slug}&populate=subcategoria,especificaciones,marca,imagen,ficha_tecnica`
-        url:`http://localhost:1337/api/productos?filters[slug][$eq]=produ&populate=nombre,imagen,precio,slug`
+        url:`http://localhost:1337/api/productos?filters[slug][$eq]=produ&populate=nombre,imagen,precio,slug,id`
       };
       const { data } = await axiosInstance(options);
       return data;

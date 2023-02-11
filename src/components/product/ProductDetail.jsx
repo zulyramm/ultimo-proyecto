@@ -30,26 +30,12 @@ const ProductDetail = () => {
             alt={attributes?.nombre}
             className="section__img--product"
           />
-          <div className="card__body">
-           
-            <h2 className="card__highlighted card__highlighted--lg">{attributes?.nombre}</h2>
-            <h4 className="card__subtitle">{attributes?.slug}</h4>
-            <h3 className="card__highlighted card__highlighted--xl">{attributes?.precio && peruvianCurrencyFormat(attributes?.precio)}</h3>
-            {/* <p className="card__text card__text--sm">± {attributes?.stock || 0} unidades disponibles</p> */}
-            {/* <button className="button button--outline-primary mt-auto">Agregar a carrito</button> */}
-            {/* <a
-              href={`https://api.whatsapp.com/send?phone=51${contactData.attributes?.componentes[3].numero}&text=Deseo cotizar el producto ${attributes?.nombre}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button button--primary mt-auto"
-            >
-              Cotizar
-            </a> */}
-          </div>
+       
         </div>
-        <div className="d-flex f-direction-column gap-sm">
+        {/* <div className="d-flex f-direction-column gap-sm">
           <h3 className="section__title section__title--sm">Descripcion</h3>
-          {/* <table className="table">
+          
+          <table className="table">
             {attributes.produ?.map(element => {
               const { id, nombre} = element;
               return (
@@ -59,8 +45,8 @@ const ProductDetail = () => {
                 </tr>
               )
             })}
-          </table> */}
-        </div>
+          </table>
+        </div> */}
         <div className="d-flex f-direction-column gap-sm">
           <h3 className="section__title section__title--sm">Ficha técnica</h3>
           <a href={attributes?.nombre} className="button button--secondary" target="_blank" rel="noopener noreferrer" download>Descargar</a>

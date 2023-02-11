@@ -12,7 +12,7 @@ const AboutUsPage = () => {
   const { loading, aboutUsData } = useAboutUs();
 
   useEffect(() => {
-    document.title = '¡Nosotros! I EAKON';
+    document.title = '¡Nosotros! ';
     Object.keys(aboutUsData).length === 0 && dispatch(fetchReadAboutUsData());
   }, []);
 

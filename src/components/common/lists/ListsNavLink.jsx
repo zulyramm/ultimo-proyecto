@@ -33,7 +33,7 @@ const ListsNavLink = ({ className = '', handleClickList = () => { }, handleClick
           Nosotros
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/contacto"
           className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
@@ -41,7 +41,7 @@ const ListsNavLink = ({ className = '', handleClickList = () => { }, handleClick
         >
           Contacto
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };

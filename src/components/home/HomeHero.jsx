@@ -29,11 +29,9 @@ const HomeHero = ({ heroProducts }) => {
             <div className="container container--5xl w-100">
               <div className="card card--hero">
                 <div className="card__body card__body--hero">
-                  <h2 className="card__title card__title--2xl color-dark-primary">{nombrePortada}</h2>
+                  {/* <h2 className="card__title card__title--2xl color-dark-primary">{nombrePortada}</h2> */}
                   
-                  {/* <h3 className="card__title card__title--lg color-dark-primary">{marca.data[0].attributes.nombre} I {subcategoria.data.attributes.nombre}</h3>
-                  <h3 className="card__highlighted card__highlighted--xl">{peruvianCurrencyFormat(precio)}</h3>
-                  <Link to={`/portadas/${slug}`} className="button button--primary">Ver más</Link> */}
+                 
                 </div>
               </div>
             </div>

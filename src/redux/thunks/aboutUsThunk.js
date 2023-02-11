@@ -7,7 +7,7 @@ export const fetchReadAboutUsData = createAsyncThunk(
     try {
       const options = {
         method: 'GET',
-        url: '/sobre-nosotros?populate=foto,logo,shortcut'
+        url: 'http://localhost:1337/api/nosotros?populate=titulo,imagen'
       };
       const { data } = await axiosInstance(options);
       return data;

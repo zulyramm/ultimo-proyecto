@@ -9,18 +9,11 @@ const ContactMeans = () => {
     <section className="section">
       <div className="container g-elements g-elements--responsive-2 gap-lg">
         <div className="d-flex f-direction-column gap-sm">
-          <h3 className="section__title section__title-sm">{attributes?.hero.titulo}</h3>
-          <p className="section__text">{attributes?.descripcion}</p>
+          {/* <h3 className="section__title section__title-sm">{attributes?titulo}</h3> */}
+          <p className="section__text">{attributes?.titulo}</p>
           <ul className="list d-flex f-direction-column gap-xs">
-            <li>
-              <h4 className="section__subtitle section__subtitle--xs"><BsGeoAlt /> Dirección</h4>
-              <ul className="list">
-                <li className="section__text section__text--sm">
-                  {attributes?.componentes[0].direccion}, {attributes?.componentes[0].ciudad}, {attributes?.componentes[0].pais}
-                </li>
-              </ul>
-            </li>
-            <li>
+            
+            {/* <li>
               <h4 className="section__subtitle section__subtitle--xs"><BsClock /> Horario de atención</h4>
               <ul className="list">
                 <li className="section__text section__text--sm">
@@ -30,8 +23,8 @@ const ContactMeans = () => {
                   {attributes?.componentes[5].dia}, {attributes?.componentes[5].hora_inicio}, {attributes?.componentes[5].hora_salida}
                 </li>
               </ul>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <h4 className="section__subtitle section__subtitle--xs"><BsEnvelope /> Correos</h4>
               <ul className="list">
                 <li className="section__text section__text--sm">
@@ -45,7 +38,7 @@ const ContactMeans = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <h4 className="section__subtitle section__subtitle--xs"><BsWhatsapp /> Celular</h4>
               <ul className="list">

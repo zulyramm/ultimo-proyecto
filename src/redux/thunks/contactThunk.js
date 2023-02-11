@@ -7,7 +7,7 @@ export const fetchReadContactData = createAsyncThunk(
     try {
       const options = {
         method: 'GET',
-        url: '/contacto?populate=componentes,imagen,hero.banner,formulario'
+        url: 'http://localhost:1337/api/contactos?populate=imagen,titulo'
       };
       const { data } = await axiosInstance(options);
       return data;
